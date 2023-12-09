@@ -1,1 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>predict-ml</title>
+</head>
+<body bgcolor="#ald99b">
+       <h1 align="center" > Crop Prediction </h1>
 
+       <form action="/predict" method="POST">
+           <table align="center" >
+           <tr><td>Nitrogen <td><input type="number" step="0.01" min="0"  name="N" placeholder="nitrogen"></td> </tr>
+           <tr><td>Phosphurs <td><input type="number"  step="0.01" min="0"  name="P" placeholder="phosphurs"></td></tr>
+           <tr><td>Potassium <td><input type="number" step="0.01" min="0"  name="K" placeholder="potassoum"></td></tr>
+           <tr><td>temperature<td> <input type="number" step="0.01" min="0"  name="temp" placeholder="temperature"></td></tr>
+           <tr> <td> humidity <td><input type="number" step="0.01" min="0"  name="hum" placeholder="humidity"></td></tr>
+           <tr><td>ph<td> <input type="number" name="PH" step="0.01" min="0" max="14" placeholder="ph"></td></tr>
+           <tr><td>rainfall<td> <input type="number" step="0.01" min="0" name="rf" placeholder="rainfall"></td></tr>
+           <tr><td>Predict <td><input type="submit" ></td></tr>
+           </table>
+       </form>
+
+         {{ prediction_text }}
+</body>
+</html>
