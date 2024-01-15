@@ -1,5 +1,5 @@
 # ML_Flask_DeployMent_Basic_Model
-
+Deployed Crop Prediction model using Flask
 ## Project Structure :
 
 model.py: Contains ml model<br>
